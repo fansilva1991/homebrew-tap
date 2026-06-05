@@ -6,8 +6,8 @@ class ClaudeSwitch < Formula
   license "MIT"
   head "https://github.com/fansilva1991/claude-switch.git", branch: "main"
 
-  depends_on :macos
   depends_on "rust" => :build
+  depends_on :macos
 
   def install
     system "cargo", "install", *std_cargo_args
